@@ -1,4 +1,5 @@
 require('plugins')
+require('lsp')
 
 --显示行号
 vim.o.number = true
