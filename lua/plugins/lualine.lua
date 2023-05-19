@@ -3,4 +3,5 @@ return {
      config = function ()
         require("lualine").setup()
      end,
+     dependencies = 'nvim-tree/nvim-web-devicons',
 }
