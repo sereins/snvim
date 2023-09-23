@@ -12,7 +12,6 @@ lua
        settings.lua
     --plugins  // 针对插件的配置
 
-
     lazy.lua  // 针对lazy插件管理器的配置
 
 init.lua      // neovim 启动的加载文件
@@ -27,3 +26,6 @@ https://github.com/ryanoasis/nerd-fonts#option-3-install-script;
 #### 关于setup的配置。 
 其可以是子字符串也可以是一个tabel
 
+
+lsp 是一个自动补全协议、如果没有这个协议那么每个语言需要个给实现一个不全、但是如果有lsp后只需要实现一份。
+每个编辑器取实现他

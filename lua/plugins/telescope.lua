@@ -1,14 +1,14 @@
 return {
     "nvim-telescope/telescope.nvim",
-     dependencies = {
-       "nvim-lua/plenary.nvim",
+    dependencies = {
+        "nvim-lua/plenary.nvim",
         {
             'nvim-telescope/telescope-fzf-native.nvim',
             build = 'make',
         },
     },
 
-     keys = {
+    keys = {
         { '<leader>?',       "<cmd>lua require('telescope.builtin').oldfiles()<cr>" },
         { "<leader><space>", "<cmd>lua require('telescope.builtin').buffers({ sort_mru = true })<cr>" },
         { "<leader>/",
@@ -29,7 +29,7 @@ return {
         { '<leader>km', "<cmd>lua require('telescope.builtin').keymaps()<cr>" },
         { '<c-p>',      "<cmd>lua require('telescope.builtin').commands()<cr>" },
     },
-   config = function()
+    config = function()
         require('telescope').setup {
             extensions = {
                 fzf = {
