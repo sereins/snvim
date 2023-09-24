@@ -7,7 +7,6 @@ return {
             build = 'make',
         },
     },
-
     keys = {
         { '<leader>?',       "<cmd>lua require('telescope.builtin').oldfiles()<cr>" },
         { "<leader><space>", "<cmd>lua require('telescope.builtin').buffers({ sort_mru = true })<cr>" },

@@ -3,11 +3,14 @@ return {
     cmd = { "Mason", "Neoconf" },
     event = { "BufReadPost", "BufNewFile" },
     dependencies = {
+        -- 帮助我们安装每个语言的 ls
         "williamboman/mason.nvim",
+        -- 用一个list 作为每个语言配置配置
         "williamboman/mason-lspconfig",
-        --
+        -- 通过json配置lsp
         "folke/neoconf.nvim",
         "folke/neodev.nvim",
+        -- 右下角加载提示
         {
             "j-hui/fidget.nvim",
             tag = "legacy",
@@ -26,6 +29,7 @@ return {
                 },
             },
             jsonls = {},
+            intelephense = {},
         }
         local on_attach = function(_, bufnr)
             -- Enable completion triggered by <c-x><c-o>
@@ -36,7 +40,7 @@ return {
                 vim.keymap.set('n', keys, func, { buffer = bufnr, desc = desc })
             end
 
-            nmap('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
+            nmap('gD', vim.lsp.buf.declaration, 'Goto Declaration')
             nmap('gd', require "telescope.builtin".lsp_definitions, '[G]oto [D]efinition')
             nmap('K', "<cmd>Lspsaga hover_doc<CR>", 'Hover Documentation')
             nmap('gi', require "telescope.builtin".lsp_implementations, '[G]oto [I]mplementation')
@@ -60,7 +64,7 @@ return {
         require("fidget").setup()
         require("lspsaga").setup()
         require("mason").setup()
-        --local capabilities = require('cmp_nvim_lsp').default_capabilities()
+        local capabilities = require('cmp_nvim_lsp').default_capabilities()
         require("mason-lspconfig").setup({
             ensure_installed = vim.tbl_keys(servers),
         })

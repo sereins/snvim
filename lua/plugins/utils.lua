@@ -31,7 +31,7 @@ return {
         config = true,
     },
     {
-        -- 
+        --
         "folke/flash.nvim",
         keys = {
             {
