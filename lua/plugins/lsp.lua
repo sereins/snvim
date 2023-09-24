@@ -30,6 +30,7 @@ return {
             },
             jsonls = {},
             intelephense = {},
+            rust_analyzer = {},
         }
         local on_attach = function(_, bufnr)
             -- Enable completion triggered by <c-x><c-o>
