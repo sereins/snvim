@@ -42,9 +42,9 @@ option.mouse = "a"
 
 --可以给项目单独设置nvim的配置
 option.exrc = true
--- 文件换行
+-- 文件交换
 option.wrap = false
---打开新文件在那个位置
+--打开新窗口在那个位置
 option.splitright = true
 
 -- Buffer Settings --
@@ -60,6 +60,8 @@ buffer.fileenconding = "utf-8"
 vim.keymap.set("n", "<A-Tab>", "<cmd>bNext<CR>")
 --关闭buffer
 vim.keymap.set("n", "<leader>bc", "<cmd>bd<CR>")
+-- 保存
+vim.keymap.set("n","<C-s>","<cmd>!w<CR>")
 
 --移动行
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")

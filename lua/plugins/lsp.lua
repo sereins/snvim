@@ -30,7 +30,9 @@ return {
             },
             jsonls = {},
             intelephense = {},
-            rust_analyzer = {},
+            rust_analyzer = {
+                cargo = { allFuture = true }
+            },
         }
         local on_attach = function(_, bufnr)
             -- Enable completion triggered by <c-x><c-o>
