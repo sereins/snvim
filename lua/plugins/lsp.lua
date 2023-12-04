@@ -1,3 +1,4 @@
+-- 补全的语言服务
 return {
     "neovim/nvim-lspconfig",
     cmd = { "Mason", "Neoconf" },

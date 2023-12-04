@@ -1,3 +1,4 @@
+--文件、文本搜索插件
 return {
     "nvim-telescope/telescope.nvim",
     dependencies = {

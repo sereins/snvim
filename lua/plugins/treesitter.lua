@@ -1,3 +1,4 @@
+--代码高亮配置
 return {
     "nvim-treesitter/nvim-treesitter",
     event = "VeryLazy",
