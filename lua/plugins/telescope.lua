@@ -26,6 +26,7 @@ return {
         { '<leader>fm', "<cmd>lua require('telescope.builtin').marks()<cr>" },
         { '<leader>qf', "<cmd>lua require('telescope.builtin').quickfix()<cr>" },
         { '<leader>km', "<cmd>lua require('telescope.builtin').keymaps()<cr>" },
+        -- 查看命令
         { '<c-p>',      "<cmd>lua require('telescope.builtin').commands()<cr>" },
     },
     config = function()

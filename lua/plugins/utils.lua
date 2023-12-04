@@ -7,16 +7,16 @@ return {
             { "k", "<Plug>(accelerated_jk_gk)" },
         },
     },
-    {
-        "folke/persistence.nvim",
-        keys = {
-            --恢复之前的buffer
-            { "<leader>qs", [[<cmd>lua require("persistence").load()<cr>]] },
-            { "<leader>ql", [[<cmd>lua require("persistence").load({ last = true})<cr>]] },
-            { "<leader>qd", [[<cmd>lua require("persistence").stop()<cr>]] },
-        },
-        config = true,
-    },
+    -- {
+    --     "folke/persistence.nvim",
+    --     keys = {
+    --         --恢复之前的buffer
+    --         { "<leader>qs", [[<cmd>lua require("persistence").load()<cr>]] },
+    --         { "<leader>ql", [[<cmd>lua require("persistence").load({ last = true})<cr>]] },
+    --         { "<leader>qd", [[<cmd>lua require("persistence").stop()<cr>]] },
+    --     },
+    --     config = true,
+    -- },
     {
         --自动括号或者引号
         "windwp/nvim-autopairs",
