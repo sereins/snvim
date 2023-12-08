@@ -11,7 +11,8 @@ option.showmode = false
 option.backspace = { "indent", "eol", "start" }
 option.tabstop = 4
 option.shiftwidth = 4
-option.expandtab = true option.shiftround = true
+option.expandtab = true
+option.shiftround = true
 option.autoindent = true
 option.smartindent = true
 option.number = true

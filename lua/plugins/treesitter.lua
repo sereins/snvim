@@ -9,7 +9,7 @@ return {
     main = "nvim-treesitter.configs",
     build = ":TSUpdate",
     opts = {
-        ensure_installed = "all",
+        ensure_installed = {"php",'phpdoc'},
         highlight = {
             enable = true,
         },
